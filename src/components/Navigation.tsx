@@ -44,7 +44,7 @@ const Navigation = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className={`sticky top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      <nav className={`sticky top-12 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-elegant border-b border-border' 
           : 'bg-transparent'
