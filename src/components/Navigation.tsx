@@ -44,7 +44,7 @@ const Navigation = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className={`fixed top-12 left-0 right-0 z-50 transition-all duration-300 ${
+      <nav className={`sticky top-12 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-elegant border-b border-border' 
           : 'bg-transparent'
@@ -96,7 +96,7 @@ const Navigation = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-border shadow-elegant z-40">
+            <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-border shadow-elegant z-30">
               <div className="px-4 py-6 space-y-4">
                 {navItems.map((item) => (
                   <a
@@ -117,8 +117,8 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* Spacer for fixed navbar */}
-      <div className="h-28"></div>
+      {/* Spacer for fixed contact bar only */}
+      <div className="h-12"></div>
     </>
   );
 };
